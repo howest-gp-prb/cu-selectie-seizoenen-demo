@@ -1,0 +1,18 @@
+﻿<Window x:Class="Prb.Seizoen.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.Seizoen.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Selecteer de maand" HorizontalAlignment="Left" Margin="37,23,0,0" VerticalAlignment="Top"/>
+        <Label Content="Voer de dag in" HorizontalAlignment="Left" Height="24" Margin="37,75,0,0" VerticalAlignment="Top" Width="114"/>
+        <ComboBox x:Name="cmbMonth" HorizontalAlignment="Left" Height="26" Margin="156,23,0,0" VerticalAlignment="Top" Width="262"/>
+        <TextBox x:Name="txtDay" HorizontalAlignment="Left" Height="24" Margin="156,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
+        <Button x:Name="btnSeason" Content="Bepaal seizoen" HorizontalAlignment="Left" Height="35" Margin="47,118,0,0" VerticalAlignment="Top" Width="208" Click="btnSeason_Click"/>
+        <Label x:Name="lblSeason" Content="" HorizontalAlignment="Left" Height="36" Margin="47,181,0,0" VerticalAlignment="Top" Width="371"/>
+
+    </Grid>
+</Window>
